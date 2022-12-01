@@ -1,6 +1,6 @@
-### Лабораторная работа №1
+# Лабораторная работа №1
 ## Батиевский В.В.
-# Задачи
+### Задачи
 1.	IP адрес веб сервера
 2.	порт к которому вы обращаетесь
 3.	истинное значение хоста ресурса
@@ -14,7 +14,7 @@
 Использовал команду: 
 curl -I -v https://www.youtube.com
 
-# Ответы
+### Ответы
 1)	64.233.165.198
 2)	443
 3)	 www.youtube.com
@@ -24,7 +24,7 @@ curl -I -v https://www.youtube.com
 7)	HTTP
 
 
-# Весь код:
+### Весь код:
 
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
