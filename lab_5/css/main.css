@@ -1,0 +1,97 @@
+
+html,body,div, h1{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font:inherit;
+
+    vertical-align: baseline;
+}
+body{
+    background-color: rgb(42, 187, 102);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    color: rgb(6, 53, 10);
+    min-width: 70%;
+    height: 500px;
+    background-color: rgb(21, 122, 63);
+    padding-left: 10px;
+    padding-block-end: 10px;
+    padding-top: 5px;
+
+}
+form  p{
+    color:rgba(119, 192, 109, 0.568)
+    
+}
+.h1{
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(24, 148, 76);
+    font-size: 32px;
+    padding-left: 10px;
+    top: 0;
+    left: 0;
+    font: optional;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.text-and-sel{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+.textarea-in-form{
+   width: 100%;
+   height: 120px;
+   border-radius: 10px;
+   position: relative;
+    
+}
+.pic-in-form-inside{
+    
+    visibility: hidden;
+
+}
+.pic-in-form-outside > span{
+    position: absolute;
+    margin-left: 5px;
+}
+.pic-in-form-outside{
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 5px;
+    width: 110px;
+}
+input,textarea{
+    outline: none;
+}
+.input-in-form{
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    min-width: 90%;
+    height: 40px;
+    text-align: left;
+    font-size: 14px;
+    padding-left: 2%;
+    text-decoration:dashed;
+}
+.main-img{
+    height: 250px;
+    width: 150px;
+    margin-left: 40px;
+}
+.sub-btn{
+    width: 150px;
+    border-radius: 5px;
+    border: 5px;
+}

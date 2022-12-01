@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №5</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <main>
+        <div class="h1">
+            Петрушка
+        </div>
+    
+    <form action=""   method="post">
+        <div class = "text-and-sel">
+            <p>
+                Заголовок
+            </p>
+            <label>
+                <input name="user-nick" placeholder="Ваш никнейм" class="input-in-form" maxlength="150">
+            </label>
+            <p>
+                Текстовое поле
+            </p>
+            <label>
+                
+                <textarea name="text-in-form" class = "textarea-in-form" placeholder="Введите ваше мнение о петрушке"></textarea>
+            </label>
+            <p>
+                Выбор файла
+            </p>
+            <label  class="pic-in-form-outside" id = "pic-label" >
+                <span id = "pic-span">Выбор файла</span>
+                <input id = "btn-file" name="sel-pic" placeholder="выберете фото" class="pic-in-form-inside" accept="image/*" type="file">
+            </label>
+            <p>
+                Категории
+            </p>
+            <label>
+                <select size="1" name="sel-in-form" >
+                    <option disabled selected>без категории</option>
+                    <option>Астра</option>
+                    <option>Карнавал</option>
+                    <option>Бриз</option>
+                    <option>Берлинская</option>
+                </select>
+            </label>
+            
+        </div>
+        <p>
+            Отправка формы
+        </p>
+        <label><button class="sub-btn" type="submit">Отправить форму</button></label>
+        
+        
+        
+
+    </form>
+</main>
+ <script src="./java.js"></script>
+</body>
+</html>

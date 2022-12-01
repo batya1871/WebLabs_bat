@@ -9,6 +9,7 @@ header  > img{
     height: 100px;
     width: 200px;
 }
+
 header{
     margin: 12px;
     display: flex;

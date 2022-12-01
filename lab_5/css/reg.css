@@ -1,0 +1,100 @@
+body{
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1300px;
+}
+header{
+    background-color: rgb(76, 76, 161);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+header  span{
+    margin-left: 1%;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+}
+.ref{
+    font-size: 20px;
+    margin-right: 10px;
+
+    
+}
+header a{
+    color: rgb(218, 210, 210);
+}
+header a:hover{
+    text-decoration: none;
+    color: white;
+}
+main{
+    background-color: rgba(214, 202, 202, 0.384);
+    flex-grow: 1;
+    position: relative;
+}
+main > h1{
+    margin-left: 29%;
+    margin-top: 2%;
+}
+.form-user{
+    margin-left: 29%;
+    margin-right: 5%;
+    margin-top: 1%;
+    min-height: 39%;
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between
+
+}
+.user-input{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.user-input-elem{
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.user-input-elem > input{
+    outline:none;
+    margin-right: 4%;
+    margin-bottom: 3%;
+    height: 25px;
+    min-width: 50%;
+}
+.elem-title{
+    color: gray;
+}
+
+.user-check{
+    display: flex;
+}
+.user-check > input{
+    width: 20px;
+}
+.user-check > span{
+    color: gray;
+}
+
+.user-post{
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    width: 96%;
+    height: 30%;
+    color: gray;
+}
+.msg-err{
+    color: red;
+    
+}
