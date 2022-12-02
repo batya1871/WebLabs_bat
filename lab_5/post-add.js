@@ -8,6 +8,6 @@ btn.onchange = function () {
     arr = msg.split("\\");
     
     span.innerText="Выбранный файл - " + arr[arr.length - 1];
-    label.style.width = (parseInt(span.offsetWidth) + 20 ) + "px"
+    label.style.width = (parseInt(span.offsetWidth) + 70 ) + "px"
   };
 
