@@ -46,19 +46,19 @@ login.addEventListener('input', function(){
   let err = "";
   if (!/^([A-я]|[A-z]|\d|@|\.|\+|-|_)*$/.test(login.value)) {
     login.style.borderColor = "red";
-    err += "Доступны только буквы, цифры и символы @.+-_!"
+    err += "Доступны только буквы, цифры и символы @.+-_!<br>"
   }
   else {
     login.style.borderColor = "";
   }
   if ((login.value.length < 5) && (login.value != "")){
-    err += "Логин должен содержать больше 5-ти символов!\n"
+    err += "Логин должен содержать больше 5-ти символов!<br>"
   }
   if (login.value.length > 150){
-    err += "Логин должен содержать меньше 150-ти символов!\n"
+    err += "Логин должен содержать меньше 150-ти символов!<br>"
   }
   if ((login.value == pass.value) && (login.value != "")) {
-    err += "Логин не должен совпадать с паролем!\n"
+    err += "Логин не должен совпадать с паролем!<br>"
   }
   loginErr.innerHTML = err;
   
@@ -66,7 +66,7 @@ login.addEventListener('input', function(){
 })
 
 email.addEventListener('input', function(){
-  if ((!/^([A-z]|\d|_|-)*@(mail|gmail|yandex)\.(ru|net)$/.test(email.value)) && (email.value != "")) {
+  if ((!/^([A-z]|\d|_|-)+@(mail|gmail|yandex)\.(ru|net)$/.test(email.value)) && (email.value != "")) {
     email.style.borderColor = "red";
   }
   else {
@@ -78,20 +78,20 @@ pass.addEventListener('input', function(){
   let err = "";
   if ((!/^.*\D.*$/.test(pass.value))&& (pass.value != "")) {
     pass.style.borderColor = "red";
-    err += "Пароль должен содержать минимум один нецифровой символ!\n"
+    err += "Пароль должен содержать минимум один нецифровой символ!<br>"
   }
   else {
     pass.style.borderColor = "";
   }
 
   if ((pass.value.length < 8) && (pass.value != "")){
-    err += "Пароль должен содержать больше 8-ти символов!\n"
+    err += "Пароль должен содержать больше 8-ти символов!<br>"
   }
   if (pass.value.length > 25){
-    err += "Логин должен содержать меньше 25-ти символов!\n"
+    err += "Логин должен содержать меньше 25-ти символов!<br>"
   }
   if ((login.value == pass.value) && (login.value != "")) {
-    err += "Логин не должен совпадать с паролем!\n"
+    err += "Логин не должен совпадать с паролем!<br>"
   }
   passErr.innerHTML = err;
   
@@ -103,7 +103,7 @@ pass2.addEventListener('input', function(){
   let err = ""
   if ((!/^.*\D.*$/.test(pass2.value))&& (pass2.value != "")) {
     pass2.style.borderColor = "red";
-    err += "Пароль должен содержать минимум один нецифровой символ!\n"
+    err += "Пароль должен содержать минимум один нецифровой символ!<br>"
   }
   else {
     pass2.style.borderColor = "";
@@ -111,13 +111,13 @@ pass2.addEventListener('input', function(){
 
   
   if ((pass2.value.length < 8) && (pass2.value != "")){
-    err += "Пароль должен содержать больше 8-ти символов!\n"
+    err += "Пароль должен содержать больше 8-ти символов!<br>"
   }
   if (pass2.value.length > 25){
-    err += "Пароль должен содержать меньше 25-ти символов!\n"
+    err += "Пароль должен содержать меньше 25-ти символов!<br>"
   }
   if ((pass2.value != pass.value) && (pass2.value != "")) {
-    err += "Пароли должны совпадать!\n"
+    err += "Пароли должны совпадать!<br>"
   }
   pass2Err.innerHTML = err;
 })
