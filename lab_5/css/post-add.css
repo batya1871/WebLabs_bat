@@ -53,6 +53,7 @@ header{
     margin-right: 50px;
     margin-left: 30px;
     margin-top: 5px; 
+    cursor: pointer;
 }
 .out-ref:hover{
     color: rgb(69, 48, 116);
@@ -189,6 +190,7 @@ footer{
     justify-content: space-between;
 }
 .footer-ref{
+    cursor: pointer;  
     font-family: "Golos UI";
     font-weight:600;
     color:rgb(66,117,247);
