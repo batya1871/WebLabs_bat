@@ -1,10 +1,12 @@
 /*Настраиваю размер тегов под текст внутри*/
-let labels = document.getElementsByClassName("Post-teg");
-
+this.onload = () => {
+  let labels = document.getElementsByClassName("Post-teg");
 for ( let i = 0; i < labels.length; i++){
+
     labels[i].style.width = parseInt(labels[i].lastChild.offsetWidth + 20) + "px"
 }
     
+}
     
   
 
