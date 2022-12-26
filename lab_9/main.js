@@ -211,3 +211,20 @@ pass.addEventListener('input', function(){
   window.ondragstart = function() {
     return false;
   };
+
+/*
+let posts = document.getElementsByClassName("Post")
+let maxPost = posts[4]
+let windowHeight = window.innerHeight
+let windowWidth = window.innerWidth
+maxPost.addEventListener('resize', function(event) {
+    
+    for (let i = 0; i < posts.length; i++){
+            if (i != 4){
+                posts[i].style.height = maxPost.style.height + "px"
+                posts[i].style.width = maxPost.style.width + "px"
+            }
+        
+    }
+}, true);
+*/
